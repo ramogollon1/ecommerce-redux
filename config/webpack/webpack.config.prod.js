@@ -130,14 +130,11 @@ const config = {
   },
 
   plugins: [
-    new Dotenv({ path: paths.appEnv + ".env" }),
+    new Dotenv(),
     new MiniCssExtractPlugin({
       filename: "style.css",
     }),
     new HtmlWebpackPlugin({
-      "process.env": {
-        TOKEN_API: process.env.TOKEN_API,
-      },
       title: "Ecommerce",
       inject: true,
       template: "public/index.html",
@@ -163,7 +160,9 @@ const config = {
       },
     }),
     new webpack.DefinePlugin({
-      ENV: JSON.stringify({ env: { development: true } }),
+      "process.env": {
+        TOKEN_API: JSON.stringify(process.env.TOKEN_API),
+      },
     }),
   ],
 };
