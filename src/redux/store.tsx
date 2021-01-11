@@ -4,14 +4,13 @@ import { composeWithDevTools } from "redux-devtools-extension/developmentOnly";
 import rootReducer from "./reducers";
 
 const middleware = [thunk];
-const initialState = {};
 
 const saveToLocalStorage = (state: any) => {
   try {
     const serializedState = JSON.stringify(state);
     localStorage.setItem("state", serializedState);
   } catch (e) {
-    console.log(e);
+    console.log("error saveToLocalStorage", e);
   }
 };
 
@@ -21,7 +20,7 @@ const loadFromLocalStorage = () => {
     if (serializedState === null) return undefined;
     return JSON.parse(serializedState);
   } catch (e) {
-    console.log(e);
+    console.log("error loadFromLocalStorage", e);
     return undefined;
   }
 };

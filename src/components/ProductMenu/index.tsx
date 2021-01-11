@@ -41,6 +41,7 @@ function ProductMenu() {
         dispatch(onHandleProductsFiltered(productSortByMax));
         return;
       default:
+        dispatch(onHandleProductsFiltered(productsList));
         return;
     }
   };

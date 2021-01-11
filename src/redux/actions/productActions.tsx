@@ -58,7 +58,7 @@ export const getHistory = () => {
   return axios
     .get(`${HISTORY_API_URL}?`, OPTIONS)
     .then((response) => response.data)
-    .catch((err) => console.log(err));
+    .catch((err) => console.log('error getHistory', err));
 };
 
 export const redeemProduct = (product: ProductType, id: string) => async (
@@ -74,7 +74,7 @@ export const redeemProduct = (product: ProductType, id: string) => async (
         payload: product,
       });
     })
-    .catch((err) => console.log(err));
+    .catch((err) => console.log('error redeemProduct', err));
 };
 
 export const fetchUser = () => (dispatch: Dispatch<any>) =>
@@ -86,7 +86,7 @@ export const fetchUser = () => (dispatch: Dispatch<any>) =>
         payload: response.data,
       });
     })
-    .catch((err) => console.log(err));
+    .catch((err) => console.log('error fetchUser', err));
 
 export const fetchProductsList = () => (dispatch: Dispatch<any>) => {
   return axios
@@ -97,7 +97,7 @@ export const fetchProductsList = () => (dispatch: Dispatch<any>) => {
         payload: response.data,
       });
     })
-    .catch((err) => console.log(err));
+    .catch((err) => console.log('error fetchProductsList', err));
 };
 
 export const setLoading = () => {

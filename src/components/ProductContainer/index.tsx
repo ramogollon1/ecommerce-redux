@@ -13,6 +13,7 @@ import { getRandomItem } from "../../utils";
 import {
   fetchUser,
   fetchProductsList,
+  onHandleProductsFiltered,
   setLoading,
 } from "../../redux/actions/productActions";
 import usePagination from "../../customHooks/usePagination";
@@ -30,9 +31,10 @@ function ProductContainer() {
   );
 
   useEffect(() => {
-    dispatch(fetchProductsList());
     dispatch(fetchUser());
+    dispatch(fetchProductsList());
     dispatch(setLoading());
+    dispatch(onHandleProductsFiltered(productsList));
   }, [dispatch]);
 
   const handleShowMoreProducts = (page: number) => {

@@ -15,7 +15,7 @@ const initialState = {
   productsFiltered: [] as string[],
   productRedeemed: [] as string[],
   getProductIdSelected: [] as string[],
-  filterBy: [] as string[],
+  filterBy: "MOST_RECENT",
 };
 
 interface IReduxGetProductsAction {
