@@ -47,7 +47,6 @@ const config = {
           transpileOnly: true,
         },
       },
-
       {
         test: /\.css|scss$/i,
         use: [
@@ -72,31 +71,20 @@ const config = {
         ],
       },
       {
-        test: /\.(png|jpe?g|gif)$/,
-        include: /assets/,
+        test: /\.(png|jpg)$/i,
         use: [
           {
-            loader: "file-loader",
-          },
-        ],
-        exclude: [/\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /\.json$/, /\.pdf$/],
-      },
-      {
-        test: /\.svg$/,
-        use: [
-          {
-            loader: "babel-loader",
-          },
-          {
-            loader: "react-svg-loader",
+            loader: "url-loader",
             options: {
-              svgo: {
-                plugins: [{ removeTitle: false }],
-                floatPrecision: 2,
-              },
+              limit: 8192, // in bytes
+              esModule: false,
             },
           },
         ],
+      },
+      {
+        test: /\.svg$/,
+        use: ["@svgr/webpack"],
       },
     ],
   },
