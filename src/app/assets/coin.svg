@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.5, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg width="24" height="24" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 34 34" style="enable-background:new 0 0 34 34;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:url(#Oval-Copy-3_1_);}
+	.st1{fill:#F8B013;}
+</style>
+<title>money</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="Catalog-pg1" transform="translate(-609.000000, -731.000000)">
+		<g id="products" transform="translate(132.000000, 622.000000)">
+			<g id="line-1">
+				<g id="product-card-hover" transform="translate(300.000000, 0.000000)">
+					<g id="money" transform="translate(71.000000, 100.000000)">
+						<g transform="translate(108.000000, 11.000000)">
+							<g>
+								
+									<radialGradient id="Oval-Copy-3_1_" cx="-32.1737" cy="64.1737" r="0.8703" gradientTransform="matrix(26.8125 0 0 -26.8125 877.6562 1735.6562)" gradientUnits="userSpaceOnUse">
+									<stop  offset="0" style="stop-color:#FFCF00"/>
+									<stop  offset="1" style="stop-color:#F7AE15"/>
+								</radialGradient>
+								<circle id="Oval-Copy-3" class="st0" cx="15" cy="15" r="17"/>
+								<path id="Shape" class="st1" d="M15,2C7.9,2,2,7.9,2,15c0,7.1,5.8,13,13,13c7.1,0,13-5.8,13-13C28,7.9,22.1,2,15,2z
+									 M15,26.4C8.7,26.4,3.6,21.3,3.6,15S8.7,3.6,15,3.6S26.4,8.7,26.4,15S21.3,26.4,15,26.4z"/>
+								<path class="st1" d="M15,4.9C9.5,4.9,4.9,9.5,4.9,15c0,5.5,4.5,10.1,10.1,10.1c5.5,0,10.1-4.5,10.1-10.1
+									C25.1,9.5,20.5,4.9,15,4.9z M15,23.5c-4.7,0-8.5-3.8-8.5-8.5s3.8-8.5,8.5-8.5s8.5,3.8,8.5,8.5S19.7,23.5,15,23.5z"/>
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

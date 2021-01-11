@@ -1,0 +1,13 @@
+.productListContainer {
+  margin: 24px -4px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 867px) {
+  .productListContainer {
+    justify-content: space-around;
+  }
+}

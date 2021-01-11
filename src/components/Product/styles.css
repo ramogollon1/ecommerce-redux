@@ -1,0 +1,99 @@
+@import "../../app/styles/colors.scss";
+
+.product {
+  padding: 12px;
+  transition: all 0.2s ease;
+  width: 276px;
+  height: 290px;
+  bottom: 0;
+  position: relative;
+  background-color: var(--color-textWhite);
+  margin-bottom: 24px;
+  list-style: none;
+}
+
+.wrapperInfoProduct {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.productImage {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapperImage {
+  border-bottom: 1px solid var(--color-gray300);
+  margin: 0 auto;
+}
+
+.productCategory {
+  color: var(--color-gray);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.productCost {
+  color: var(--color-textPrimary);
+  font-size: 28px;
+  line-height: 34px;
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.productName {
+  color: var(--color-gray500);
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.coin {
+  width: 20px;
+  height: 23px;
+  margin-left: 4px;
+}
+
+.redeemButtonMobile {
+  width: 100%;
+  color: var(--color-textWhite);
+  background: linear-gradient(
+    180deg,
+    rgba(10, 212, 250, 0.86) 0%,
+    rgba(37, 187, 241, 0.86) 100%
+  );
+  border-radius: 4px;
+  margin-top: 12px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  padding: 8px 24px;
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+}
+
+@media screen and (min-width: 992px) {
+  .isProductHover {
+    bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .product {
+    height: 100%;
+  }
+  .productImage {
+    width: 70%;
+  }
+
+  .buttonDisabled {
+    background: var(--color-gray300);
+  }
+}

@@ -1,0 +1,22 @@
+@import "../../app/styles/colors.scss";
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-textWhite);
+  width: 100%;
+  color: var(--color-textPrimary);
+  text-align: center;
+  padding: 24px;
+  clear: both;
+}
+
+.upArrowIcon {
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}

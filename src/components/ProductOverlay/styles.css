@@ -1,0 +1,72 @@
+@import "../../app/styles/colors.scss";
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.5s ease;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 212, 250, 0.86) 0%,
+    rgba(37, 187, 241, 0.86) 100%
+  );
+}
+
+.wrapperProductMoney {
+  width: 100%;
+  padding: 0 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.redeemedButton {
+  cursor: not-allowed;
+}
+
+.coin {
+  width: 24px;
+  height: 24px;
+}
+
+.redeemButton {
+  width: 100%;
+  color: var(--color-gray500);
+  background-color: var(--color-textWhite);
+  border-radius: 12px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  padding: 8px 24px;
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.productMoney {
+  color: var(--color-textWhite);
+  font-size: 36px;
+  line-height: 46px;
+  margin-bottom: 12px;
+}
+
+@media screen and (max-width: 667px) {
+  .productMoney {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .coin {
+    width: 18px;
+    height: 18px;
+  }
+}

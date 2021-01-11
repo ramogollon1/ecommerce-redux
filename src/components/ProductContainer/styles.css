@@ -1,0 +1,94 @@
+@import "../../app/styles/colors.scss";
+
+.home {
+  position: relative;
+}
+
+.productContainer {
+  background-color: var(--color-gray100);
+  padding-bottom: 48px;
+}
+
+.image {
+  margin: 0 12px;
+}
+
+.containerProducts {
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1176px;
+}
+
+.hero {
+  background-color: var(--color-blueLight100);
+  position: relative;
+  margin-top: 80px;
+}
+
+.heroBackground {
+  width: 100%;
+  background: url("../../app/assets/header-x2.png") no-repeat;
+  background-position: center right;
+  height: 412px;
+  background-size: cover;
+}
+
+.heroTitle {
+  color: var(--color-textWhite);
+  font-size: 44px;
+  line-height: 60px;
+  font-weight: 700;
+  position: absolute;
+  left: 24px;
+  bottom: 48px;
+}
+
+.wrapperPagination {
+  text-align: center;
+}
+
+.paginationButton {
+  color: var(--color-gray500);
+  background-color: var(--color-textWhite);
+  border-radius: 100px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 8px 24px;
+  margin: 0 4px;
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.paginationActive {
+  background-color: var(--color-blueLight200);
+  color: var(--color-textWhite);
+}
+
+@media screen and (min-width: 1200px) {
+  .heroBackground {
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .titleHero {
+    top: 48px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .heroBackground {
+    height: 200px;
+    max-height: 200px;
+  }
+  .titleHero {
+    top: 24px;
+    font-size: 34px;
+    line-height: 50px;
+  }
+}

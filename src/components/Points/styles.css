@@ -1,0 +1,24 @@
+@import "../../app/styles/colors.scss";
+
+.wrapperPoints {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.username {
+  margin-right: 18px;
+}
+
+.redeem {
+  padding: 4px 12px;
+  background-color: var(--color-gray200);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.points {
+  margin-right: 6px;
+}

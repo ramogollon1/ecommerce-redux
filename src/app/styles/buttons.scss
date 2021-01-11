@@ -1,0 +1,28 @@
+@import "./colors.scss";
+
+.buttonPrimary {
+  width: 100%;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  padding: 8px 24px;
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.buttonBlue {
+  background-color: var(--color-blueLight200);
+  color: var(--color-textWhite);
+}
+
+.buttonGray {
+  color: var(--color-gray);
+  background-color: var(--color-gray200);
+}
+
+.buttonWhite {
+  color: var(--color-gray500);
+  background-color: var(--color-textWhite);
+}

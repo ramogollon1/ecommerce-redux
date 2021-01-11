@@ -1,0 +1,6 @@
+@import "../../app/styles/colors.scss";
+
+.sectionTitle {
+  color: var(--color-gray500);
+  margin-bottom: 12px;
+}
