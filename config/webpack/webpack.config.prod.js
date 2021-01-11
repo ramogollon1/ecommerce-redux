@@ -130,7 +130,7 @@ const config = {
   },
 
   plugins: [
-    new Dotenv(),
+    new Dotenv({ path: path.resolve(__dirname, "./.env") }),
     new MiniCssExtractPlugin({
       filename: "style.css",
     }),
