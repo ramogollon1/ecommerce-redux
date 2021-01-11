@@ -31,10 +31,13 @@ function ProductContainer() {
   );
 
   useEffect(() => {
+    dispatch(onHandleProductsFiltered(productsList));
+  }, [productsList]);
+
+  useEffect(() => {
     dispatch(fetchUser());
     dispatch(fetchProductsList());
     dispatch(setLoading());
-    dispatch(onHandleProductsFiltered(productsList));
   }, [dispatch]);
 
   const handleShowMoreProducts = (page: number) => {

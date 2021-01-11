@@ -23,7 +23,7 @@ function Product({ product, user }: Props) {
   const dispatch = useDispatch();
   const [redeem, setRedeem] = useState(false);
   const getStateData = getCurrentState();
-  const { getProductIdSelected } = getStateData;
+  const { getProductIdSelected, isLoading } = getStateData;
 
   const { img, name, cost, category } = product;
   const { points } = user;

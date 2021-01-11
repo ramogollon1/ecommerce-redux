@@ -13,7 +13,7 @@ function Points({ user }: Props) {
     <div className={styles.wrapperPoints}>
       <p className={styles.username}>{name || "John Kite"}</p>
       <div className={styles.redeem}>
-        <span className={styles.points}>{points || 15000}</span>
+        <span className={styles.points}>{points || 0}</span>
         <CoinImage />
       </div>
     </div>
