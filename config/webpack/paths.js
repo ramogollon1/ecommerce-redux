@@ -11,5 +11,5 @@ module.exports = {
   appSrc: resolveApp("src/app"),
   appBuild: resolveApp("build"),
   appConfig: resolveApp("config"),
-  appEnv: resolve("/"),
+  appEnv: resolveApp("/"),
 };
