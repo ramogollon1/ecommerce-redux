@@ -100,6 +100,9 @@ const config = {
       },
     ],
   },
+  env: {
+    TOKEN_API: process.env.TOKEN_API,
+  },
 
   optimization: {
     minimizer: [
