@@ -100,9 +100,6 @@ const config = {
       },
     ],
   },
-  env: {
-    TOKEN_API: process.env.TOKEN_API,
-  },
 
   optimization: {
     minimizer: [
@@ -172,6 +169,9 @@ config.devServer = {
   port: 8080,
   historyApiFallback: true,
   open: true,
+  env: {
+    TOKEN_API: process.env.TOKEN_API,
+  },
   hot: true,
   compress: true,
   stats: "errors-only",
