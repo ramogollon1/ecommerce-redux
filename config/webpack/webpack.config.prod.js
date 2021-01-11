@@ -4,6 +4,7 @@ const Dotenv = require("dotenv-webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const publicPath = "/";
 const BUILD_DIR = paths.appBuild;
@@ -46,10 +47,11 @@ const config = {
           transpileOnly: true,
         },
       },
+
       {
-        test: /\.css$/i,
+        test: /\.css|scss$/i,
         use: [
-          "style-loader",
+          MiniCssExtractPlugin.loader,
           {
             loader: "css-loader",
             options: {
@@ -58,6 +60,7 @@ const config = {
               modules: true,
             },
           },
+          { loader: "sass-loader", options: { sourceMap: true } },
           {
             loader: "postcss-loader",
             options: {
@@ -128,6 +131,9 @@ const config = {
 
   plugins: [
     new Dotenv(),
+    new MiniCssExtractPlugin({
+      filename: "style.css",
+    }),
     new HtmlWebpackPlugin({
       title: "Ecommerce",
       inject: true,
