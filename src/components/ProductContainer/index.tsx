@@ -3,7 +3,7 @@ import ProductList from "../ProductList";
 import { useDispatch } from "react-redux";
 import { getCurrentState } from "../../utils";
 import ProductMenu from "../ProductMenu";
-import FeaturedProducts from "../FeatureProducts";
+import RandomProducts from "../RandomProducts";
 import Nav from "../Nav";
 import Footer from "../Footer";
 import styles from "./styles.css";
@@ -76,7 +76,7 @@ function ProductContainer() {
         </div>
         <div className={stylesGlobal.section}>
           <div className={styles.containerProducts}>
-            <FeaturedProducts user={user} products={randomProductList} />
+            <RandomProducts user={user} products={randomProductList} />
           </div>
         </div>
       </div>

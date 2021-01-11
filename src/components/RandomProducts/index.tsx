@@ -8,13 +8,13 @@ type Props = {
   user: UserType;
 };
 
-function FeaturedProducts({ products, user }: Props) {
+function RandomProducts({ products, user }: Props) {
   return (
     <>
-      <h2 className={styles.sectionTitle}>Featured Products</h2>
+      <h2 className={styles.sectionTitle}>Random Products</h2>
       <ProductList user={user} products={products} maxLength={4} />
     </>
   );
 }
 
-export default FeaturedProducts;
+export default RandomProducts;
